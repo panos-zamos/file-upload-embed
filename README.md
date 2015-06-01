@@ -19,7 +19,7 @@ Learn how to embed a cloudwok widget into your own website. Thereby, you can cre
 
 Here is a [Demo](http://cloudwok.github.io/jQuery-File-Upload/) of jQuery-File-Upload with CloudWok back-end in action. The project's code is [here](https://github.com/cloudwok/jQuery-File-Upload). Only two minor changes of the orginal code by [blueimp](https://github.com/blueimp/jQuery-File-Upload) were necssary:
 
-1. In the [index.html](https://github.com/cloudwok/jQuery-File-Upload/blob/master/index.html) file replace `<form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">` with `<form id="fileupload" action="https://www.cloudwok.com/api/rest/e/upload/YOUR_WOK_ID" method="POST" enctype="multipart/form-data">`. Replace `YOUR_WOK_ID` with your own wok id.
+1. In the [index.html](https://github.com/cloudwok/jQuery-File-Upload/blob/master/index.html) file replace `<form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">` with `html<form id="fileupload" action="https://www.cloudwok.com/api/rest/e/upload/YOUR_WOK_ID" method="POST" enctype="multipart/form-data">`. Replace `YOUR_WOK_ID` with your own wok id.
 2. Remove (or comment out) the line `url: 'server/php/'` in [js/main.js](https://github.com/cloudwok/jQuery-File-Upload/blob/master/js/main.js)
 
 That's it!
