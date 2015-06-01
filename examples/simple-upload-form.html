@@ -21,8 +21,11 @@
       <br />
       <input type="submit" value="Upload now!" />
     </form>
-
+    <!-- It would be cool if you could link back to our page https://www.cloudwok.com
+    either here or somewhere else on your page. Thanks!! -->
+    <p style="font-size: x-small"><i>Upload service - powered by <a href="https://www.cloudwok.com">CloudWok</a></i></p>
     <div id="message"></div>
+
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
@@ -52,11 +55,11 @@
               url: cloudwok_upload_url,
               type: "OPTIONS"
             }).fail(function() {
-              $("#message").html("<a>CloudWok server currently unavailable</a>");
+              $("#message").html("<p>CloudWok server currently unavailable</p>");
             });
           }
           var data = new FormData();
-          jQuery.each(jQuery("#fileinput")[0].files, function(i, file) {
+          $.each(jQuery("#fileinput")[0].files, function(i, file) {
             data.append('file[]', file);
           });
           // POST request
@@ -68,7 +71,7 @@
             processData: false,
             type: 'POST',
           }).success(function() {
-            $("#message").html("<a>File(s) uploaded. Yay!</a>");
+            $("#message").html("<p>File(s) uploaded. Yay!</p>");
           });
 
           return false;
