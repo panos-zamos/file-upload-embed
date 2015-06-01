@@ -11,11 +11,7 @@ Learn how to embed a cloudwok widget into your own website. Thereby, you can cre
 
 ## Examples
 
-### Simple upload form
-
-
-
-### jQuery-File-Upload
+### blueimp/jQuery-File-Upload
 
 Here is a [Demo](http://cloudwok.github.io/jQuery-File-Upload/) of jQuery-File-Upload with CloudWok back-end in action. The project's code is [here](https://github.com/cloudwok/jQuery-File-Upload). Only two minor changes of the orginal code by [blueimp](https://github.com/blueimp/jQuery-File-Upload) were necssary:
 
@@ -23,6 +19,48 @@ Here is a [Demo](http://cloudwok.github.io/jQuery-File-Upload/) of jQuery-File-U
 2. Remove (or comment out) the line `url: 'server/php/'` in [js/main.js](https://github.com/cloudwok/jQuery-File-Upload/blob/master/js/main.js)
 
 That's it!
+
+### Your own file upload form
+
+You can also build your own upload form if you don't want to use blueimp/jQuery-File-Upload. Here is [an example](https://github.com/cloudwok/embed/blob/master/examples/simple-upload-form.html) of how you might do this.
+
+The upload form looks, for example, like this:
+
+```html
+    <form id="fileupload" method="POST" enctype="multipart/form-data">
+      <input id="fileinput" type="file" name="files[]" multiple>
+      <br />
+      <br />
+      <input type="submit" value="Upload now!" />
+    </form>
+```
+
+You need to add some code to perform the upload. Here is an example with jQuery:
+
+```javascript
+var wok_id = "ENTER_YOUR_WOK_ID"
+var cloudwok_upload_url = "https://www.cloudwok.com/api/rest/e/upload/" + wok_id;
+$(function() {
+  var data = new FormData();
+  $.each(jQuery("#fileinput")[0].files, function(i, file) {
+    data.append('file[]', file);
+  });
+  // POST request
+  $.ajax({
+    url: cloudwok_upload_url,
+    data: data,
+    cache: false,
+    contentType: false,
+    processData: false,
+    type: 'POST',
+  }).success(function() {
+    $("#message").html("<a>File(s) uploaded. Yay!</a>");
+  });
+  return false;
+  });
+});
+
+```
 
 ## Enforce file size and quota check
 
