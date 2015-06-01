@@ -31,7 +31,8 @@ When you sign up for CloudWok, you get a free upload quota of 50MB per month and
 You can do so with the following code (requires jquery):
 
 ```html
-<form id="fileupload" action="https://www.cloudwok.com/api/rest/e/upload/YOUR_WOK_ID" method="POST" enctype="multipart/form-data">
+<form id="fileupload" action="https://www.cloudwok.com/api/rest/e/upload/YOUR_WOK_ID" 
+method="POST" enctype="multipart/form-data">
 ...
 </form>
 ```
