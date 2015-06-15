@@ -16,7 +16,7 @@ The other two approaches (2 and 3) are a bit more advanced but give you more fle
 
 ### 1. copy & paste
 
-
+... coming soon ...
 
 ### 2. blueimp/jQuery-File-Upload
 
