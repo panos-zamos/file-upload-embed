@@ -7,11 +7,18 @@ Learn how to embed a cloudwok widget into your own website. Thereby, you can cre
 1. Go to [https://www.cloudwok.com/](https://www.cloudwok.com/) and create an account.
 2. Create a CloudWok that is either connected to a folder in your Dropbox, Google Drive, Box.com account or other cloud storage accounts that are supported by CloudWok.
 3. After you have created a Wok, you get a URL to an upload website, such as this: https://www.cloudwok.com/u/ArK6. The last four digits are your "wok id" (in this example: ArK6).
-4. Enter as your form's POST action: `https://www.cloudwok.com/api/rest/e/upload/ArK6` (replace ArK6 with your own wok id)
 
 ## Examples
 
-### blueimp/jQuery-File-Upload
+The following three examples show you how to integrate CloudWok into your website. The first approach is the easiest, just copy and paste the code into your website's HTML code where you need the widget.
+
+The other two approaches (2 and 3) are a bit more advanced but give you more flexibility to customize the widget and integrate the CloudWok API deeper into your existing workflows.
+
+### 1. copy & paste
+
+
+
+### 2. blueimp/jQuery-File-Upload
 
 Here is a [Demo](http://cloudwok.github.io/jQuery-File-Upload/) of jQuery-File-Upload with CloudWok back-end in action. The project's code is [here](https://github.com/cloudwok/jQuery-File-Upload). Only two minor changes of the orginal code by [blueimp](https://github.com/blueimp/jQuery-File-Upload) were necssary:
 
@@ -20,7 +27,7 @@ Here is a [Demo](http://cloudwok.github.io/jQuery-File-Upload/) of jQuery-File-U
 
 That's it!
 
-### Your own file upload form
+### 3. Your own file upload form
 
 You can also build your own upload form if you don't want to use blueimp/jQuery-File-Upload. Here is [an example](https://github.com/cloudwok/embed/blob/master/examples/simple-upload-form.html) of how you might do this.
 
