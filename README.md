@@ -8,14 +8,29 @@ Learn how to embed a cloudwok widget into your own website. Thereby, you can cre
 
 ### File upload to Dropbox folder
 
+![file upload to Dropbox folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-dropbox.png "File upload widget for Dropbox")
+
 ### File upload to Google Drive folder
+
+![file upload to Google Drive folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-google-drive.png "File upload widget for Google Drive")
 
 ### File upload to Amazon S3 bucket
 
+![file upload to Amazon S3 bucket](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-aws-s3.png "File upload widget for AWS S3")
+
 ### File upload to Box.com folder
+
+![file upload to Box.com folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-box.png "File upload widget for Box.com")
+
+### File upload to Microsoft OneDrive folder
+
+![file upload to Microsoft OneDrive folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-microsoft-onedrive.png "File upload widget for Microsoft OneDrive")
+
+... coming soon ...
 
 ### File upload to Facebook photo album
 
+![file upload to Facebook photo album](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-facebook-album.png "Photo upload widget for Facebook photo album")
 
 ## Getting up-and-running in 5 minutes
 
