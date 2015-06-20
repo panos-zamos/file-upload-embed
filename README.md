@@ -4,23 +4,33 @@ CloudWok is a Web service that enables you to receive uploaded files directly in
 
 Learn how to embed a cloudwok widget into your own website. Thereby, you can create a form on your website where visitors of your website can upload files that are transferred directly into your connected Dropbox folder (or Google Drive folder, ...). It's easy. Trust me.
 
-## File upload to ...
+## Add the file-upload embed widget to your website
+
+With the CloudWok file-upload embed widget, you can let visitors of your website upload files and receive the files in your favorite cloud storage: Dropbox, Google Drive, Amazon S3, Box.com, or Facebook.
 
 ### File upload to Dropbox folder
 
 ![file upload to Dropbox folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-dropbox.png "File upload widget for Dropbox")
 
+Let your website visitors upload files that are directly transferred to your Dropbox folder.
+
 ### File upload to Google Drive folder
 
 ![file upload to Google Drive folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-google-drive.png "File upload widget for Google Drive")
+
+Let your website visitors upload files that are directly transferred to your Google Drive folder.
 
 ### File upload to Amazon S3 bucket
 
 ![file upload to Amazon S3 bucket](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-aws-s3.png "File upload widget for AWS S3")
 
+Let your website visitors upload files that are directly transferred to your Amazon We3b Services S3 bucket.
+
 ### File upload to Box.com folder
 
 ![file upload to Box.com folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-box.png "File upload widget for Box.com")
+
+Let your website visitors upload files that are directly transferred to your Box.com folder.
 
 ### File upload to Microsoft OneDrive folder
 
@@ -31,6 +41,8 @@ Learn how to embed a cloudwok widget into your own website. Thereby, you can cre
 ### File upload to Facebook photo album
 
 ![file upload to Facebook photo album](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-facebook-album.png "Photo upload widget for Facebook photo album")
+
+Let your website visitors upload pictures, videos, and photos that are directly transferred to one of your Facebook albums. You can configure who can see the uploaded pictures by adjusting the privacy settings of your Facebook photo album (see "How Privacy Works for Photo Albums" https://www.facebook.com/help/385017548218624/).
 
 ## Getting up-and-running in 5 minutes
 
