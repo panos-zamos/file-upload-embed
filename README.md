@@ -8,44 +8,15 @@ Learn how to embed a cloudwok widget into your own website. Thereby, you can cre
 
 Add the CloudWok file-upload embed widget to your website to let visitors of your website upload files and receive the files in your favorite cloud storage: Dropbox, Google Drive, Amazon S3, Box.com, or Facebook.
 
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
-<table>
-    <tr>
-        <td>
-        ![file upload to Dropbox folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-dropbox.png "File upload widget for Dropbox")
-        Let your website visitors upload files that are directly transferred to your Dropbox folder.
-        </td>
-        <td>
-![file upload to Google Drive folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-google-drive.png "File upload widget for Google Drive")
-Let your website visitors upload files that are directly transferred to your Google Drive folder.
-        </td>
-    </tr>
-        <tr>
-        <td>
-![file upload to Amazon S3 bucket](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-aws-s3.png "File upload widget for AWS S3")
-Let your website visitors upload files that are directly transferred to your Amazon We3b Services S3 bucket.
-        </td>
-        <td>
-![file upload to Box.com folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-box.png "File upload widget for Box.com")
-Let your website visitors upload files that are directly transferred to your Box.com folder.
-        </td>
-    </tr>
-        <tr>
-        <td>
-![file upload to Microsoft OneDrive folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-microsoft-onedrive.png "File upload widget for Microsoft OneDrive")
-
-... coming soon ...
-        </td>
-        <td>
-![file upload to Facebook photo album](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-facebook-album.png "Photo upload widget for Facebook photo album")
-
-Let your website visitors upload pictures, videos, and photos that are directly transferred to one of your Facebook albums. You can configure who can see the uploaded pictures by adjusting the privacy settings of your Facebook photo album (see "How Privacy Works for Photo Albums" https://www.facebook.com/help/385017548218624/).
-        </td>
-    </tr>
-</table>
+| File upload to your cloud |  Description |
+|---------------------------|--------------|
+| ![file upload to Dropbox folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-dropbox.png "File upload widget for Dropbox") |  Let your website visitors upload files that are directly transferred to your Dropbox folder. |
+| ![file upload to Google Drive folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-google-drive.png "File upload widget for Google Drive") |    Let your website visitors upload files that are directly transferred to your Google Drive folder. |
+| ![file upload to Amazon S3 bucket](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-aws-s3.png "File upload widget for AWS S3") | Let your website visitors upload files that are directly transferred to your Amazon We3b Services S3 bucket. |
+| ![file upload to Box.com folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-box.png "File upload widget for Box.com") | Let your website visitors upload files that are directly transferred to your Box.com folder. |
+| ![file upload to Microsoft OneDrive folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-microsoft-onedrive.png "File upload widget for Microsoft OneDrive") | ... coming soon ... |
+| ![file upload to Facebook photo album](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-facebook-album.png "Photo upload widget for Facebook photo album") |  |
+| col 3 is | Let your website visitors upload pictures, videos, and photos that are directly transferred to one of your Facebook albums. You can configure who can see the uploaded pictures by adjusting the privacy settings of your Facebook photo album (see "How Privacy Works for Photo Albums" https://www.facebook.com/help/385017548218624/). |
 
 ## Getting up-and-running in 5 minutes
 
