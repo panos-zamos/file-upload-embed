@@ -6,20 +6,20 @@
   <title>Embedded widget test</title>
 </head>
 
-<body>
+<body style="width:80%">
   <h3>Simple example of CloudWok file-upload widget</h3>
   <p>Let your website visitors upload files directly into your Google Drive folder, Dropbox folder, Box.com folder, S3 bucket, or Facebook photo album.</p>
-<ol>
-  <li>
-    Go to https://www.cloudwok.com/ and create an account.
-</li>
-  <li>
-    Create a CloudWok that is either connected to a folder in your Dropbox, Google Drive, Box.com account or other cloud storage accounts that are supported by CloudWok.
-  </li>
-  <li>
-    After you have created a Wok, you get a URL to an upload website, such as this: https://www.cloudwok.com/u/ArK6. The last four letters are your "wok id" (in this example: ArK6).
-  </li>
-</ol>
+  <ol>
+    <li>
+      Go to https://www.cloudwok.com/ and create an account.
+    </li>
+    <li>
+      Create a CloudWok that is either connected to a folder in your Dropbox, Google Drive, Box.com account or other cloud storage accounts that are supported by CloudWok.
+    </li>
+    <li>
+      After you have created a Wok, you get a URL to an upload website, such as this: https://www.cloudwok.com/u/ArK6. The last four letters are your "wok id" (in this example: ArK6).
+    </li>
+  </ol>
   <!-- just for demo purposes -->
   <form action="#">
     <label>Enter your wok id: </label>
@@ -27,35 +27,33 @@
   </form>
   <!-- demo end -->
 
-  <div width="80%">
-    <!-- CloudWok embed widget BEGIN -->
-    <!-- Include these HTML and JavaSCript snippets to your website -->
-    <!-- CloudWok upload form -->
-    <form class="cloudwok-upload" data-wokid="ENTER_YOUR_WOK_ID">
-      <div class="cloudwok-upload-files"></div>
-      <div class="cloudwok-dropzone"></div>
-    </form>
-    <!-- CloudWok JavaScript snippet -->
-    <script>
-      (function(window, document) {
-        var loader = function() {
-          var script = document.createElement("script"),
-            tag = document.getElementsByTagName("script")[0];
-          script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
-          tag.parentNode.insertBefore(script, tag);
-        };
-        window.addEventListener ? window.addEventListener("load", loader, false) :
-          window.attachEvent("onload", loader);
-      })(window, document);
-    </script>
-    <!-- CloudWok embed widget END -->
-  </div>
+  <!-- CloudWok embed widget BEGIN -->
+  <!-- Include these HTML and JavaSCript snippets to your website -->
+  <!-- CloudWok upload form -->
+  <form class="cloudwok-upload" data-wokid="ENTER_YOUR_WOK_ID">
+    <div class="cloudwok-upload-files"></div>
+    <div class="cloudwok-dropzone"></div>
+  </form>
+  <!-- CloudWok JavaScript snippet -->
+  <script>
+    (function(window, document) {
+      var loader = function() {
+        var script = document.createElement("script"),
+          tag = document.getElementsByTagName("script")[0];
+        script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
+        tag.parentNode.insertBefore(script, tag);
+      };
+      window.addEventListener ? window.addEventListener("load", loader, false) :
+        window.attachEvent("onload", loader);
+    })(window, document);
+  </script>
+  <!-- CloudWok embed widget END -->
 
   <!-- just for demo purposes -->
   <script>
     $('#my-wok-id').on('input', function() {
       var my_wok_id = $("#my-wok-id").val();
-      $("cloudwok-upload").data("wokid", my_wok_id);
+      $(".cloudwok-upload").data("wokid", my_wok_id);
     });
   </script>
   <!-- demo end -->
