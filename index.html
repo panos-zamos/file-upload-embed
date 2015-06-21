@@ -14,10 +14,14 @@
     <h3>2. Create a CloudWok that is either connected to a folder in your Dropbox, Google Drive, Box.com account or other cloud storage accounts that are supported by CloudWok.</h3>
     <h3>3. After you have created a Wok, you get a URL to an upload website, such as this: https://www.cloudwok.com/u/ArK6. The last four letters are your "wok id" (in this example: ArK6).</h3>
     <!-- just for demo purposes -->
-      <label>Enter your wok id: </label>
-      <input id="my-wok-id" type="text" value="" placeholder="4-digit-wok-id" />
-      <a class="btn btn-primary" id="my-wok-btn">Update</a>
-      <div class="lead" id="my-wok-id-msg"></div>
+    <form class="form-inline">
+      <div class="form-group">
+        <label>Enter your wok id: </label>
+        <input id="my-wok-id" type="text" value="" placeholder="4-digit-wok-id" />
+        <button type="button" class="btn btn-success" id="my-wok-btn">Update</button>
+      </div>
+    </form>
+    <div class="lead" id="my-wok-id-msg">Active wok id: <strong class="cloudwok-wok-id"></strong></div>
     <!-- demo end -->
 
     <div style="margin-left: auto; margin-right: auto; width:50%">
@@ -44,15 +48,35 @@
       </script>
       <!-- CloudWok embed widget END -->
     </div>
+    
+    <pre>
+      &lt;form class="cloudwok-upload" data-wokid="<span class="cloudwok-wok-id"></span>"&gt;<br /> 
+      &lt;div class="cloudwok-upload-files"&gt;&lt;/div&gt;<br /> 
+      &lt;div class="cloudwok-dropzone"&gt;&lt;/div&gt;<br /> 
+      &lt;/form&gt;<br /> 
+      <br /> 
+      &lt;script&gt;<br /> 
+        (function(window, document) {<br />
+          var loader = function() {<br />
+          var script = document.createElement("script"),<br />
+          tag = document.getElementsByTagName("script")[0];<br />
+          script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";<br />
+          tag.parentNode.insertBefore(script, tag);<br /> };<br />
+          window.addEventListener ? window.addEventListener("load", loader, false) :<br />
+          window.attachEvent("onload", loader);<br />
+        })(window, document);<br />
+      &lt;/script&gt;</p>
+    </pre>
 
     <!-- just for demo purposes -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
-        $("#my-wok-btn").click(function() {
+        $("#my-wok-btn").click(function(e) {
+          e.preventDefault();
           var my_wok_id = $("#my-wok-id").val();
           $(".cloudwok-upload").data("wokid", my_wok_id);
-          $("#my-wok-id-msg").html("<p>Set wok id to " + my_wok_id + "</p>");
+          $(".cloudwok-wok-id").html(my_wok_id);
         });
       });
     </script>
