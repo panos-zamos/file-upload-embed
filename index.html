@@ -50,7 +50,7 @@
       <br />
 &lt;div class="cloudwok-embed" data-wokid="<span class="cloudwok-wok-id"></span>"&gt;<br />
   &lt;div class="cloudwok-upload-files"&gt;&lt;/div&gt;<br />
-  &lt;form class="cloudwok-upload" data-wokid="<span class="cloudwok-wok-id"></span>"&gt;<br />
+  &lt;form class="cloudwok-upload"&gt;<br />
     &lt;div class="cloudwok-dropzone"&gt;&lt;/div&gt;<br />
   &lt;/form&gt;<br />
   &lt;div class="cloudwok-download-files"&gt;&lt;/div&gt;<br />
@@ -87,7 +87,7 @@
       };
 
       function updateWokId(wokId) {
-          $("form.cloudwok-upload").attr('data-wokid', wokId);
+          $(".cloudwok-embed").attr('data-wokid', wokId);
           $(".cloudwok-wok-id").html(wokId);
       };
 
