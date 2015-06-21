@@ -82,13 +82,15 @@
     <!-- just for demo purposes -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
-      $(document).ready(function() {
-        $("#my-wok-btn").click(function(e) {
+      var updateWokId = function(e) {
           e.preventDefault();
           var my_wok_id = $("#my-wok-id").val();
           $(".cloudwok-upload").data("wokid", my_wok_id);
           $(".cloudwok-wok-id").html(my_wok_id);
-        });
+      };
+      
+      $(document).ready(function() {
+        $("#my-wok-btn").on("click", updateWokId).closest("form").on("submit", updateWokId);
       });
     </script>
     <!-- demo end -->
