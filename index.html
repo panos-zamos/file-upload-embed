@@ -103,7 +103,7 @@
       
       $(document).ready(function() {
         var wokId = getUrlVars()['wokid'];
-        $("form.cloudwok-upload").data("wokid", wokId.length ? wokId : 'Ark6');
+        $("form.cloudwok-upload").data("wokid", wokId && wokId.length ? wokId : 'Ark6');
         window.updateWokId(window, document);
         //$("#my-wok-btn").on("click", updateWokId).closest("form").on("submit", updateWokId);
       });
