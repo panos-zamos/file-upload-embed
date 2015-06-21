@@ -31,7 +31,39 @@ The other two approaches (2 and 3) are a bit more advanced but give you more fle
 
 ### 1. copy & paste
 
-... coming soon ...
+Here is [a simple example](https://github.com/cloudwok/file-upload-embed/blob/master/examples/01-simple-example.html) which shows you how you can add the file-upload widget to your website.
+
+The file-upload embed widget has two parts. First the HTML part:
+
+```html
+    <form class="cloudwok-upload" data-wokid="ENTER_YOUR_WOK_ID">
+      <div class="cloudwok-upload-files"></div>
+      <div class="cloudwok-dropzone"></div>
+      <div class="cloudwok-download-files"></div>
+    </form>
+```
+
+In the HTML code, you must replace the placeholder `ENTER_YOUR_WOK_ID` with the wok id of your own wok. You can decide which features you would like to add to your website:
+
+* `<div class="cloudwok-upload-files"></div>`
+* `<div class="cloudwok-dropzone"></div>`
+* `<div class="cloudwok-download-files"></div>`
+
+You must also add the following JavaScript code to your website. You can paste the JavScript code at the bottom of your page (just over the closing `</body>` tag) to make your page load faster. (The page will not really load faster, but the visible content will be shown earlier to the user which makes is appear as if the page loads faster).
+
+```html
+    <script>
+      (function(window, document) {
+        var loader = function() {
+          var script = document.createElement("script"),
+            tag = document.getElementsByTagName("script")[0];
+          script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
+          tag.parentNode.insertBefore(script, tag);
+        };
+        window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+      })(window, document);
+    </script>
+```
 
 ### 2. blueimp/jQuery-File-Upload
 
@@ -44,7 +76,7 @@ That's it!
 
 ### 3. Your own file upload form
 
-You can also build your own upload form if you don't want to use blueimp/jQuery-File-Upload. Here is [an example](https://github.com/cloudwok/embed/blob/master/examples/simple-upload-form.html) of how you might do this.
+You can also build your own upload form if you don't want to use blueimp/jQuery-File-Upload. Here is [an example](https://github.com/cloudwok/file-upload-embed/blob/master/examples/02-customized-upload-form-example.html) of how you might do this.
 
 The upload form looks, for example, like this:
 
