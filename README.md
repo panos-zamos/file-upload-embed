@@ -51,7 +51,7 @@ In the HTML code, you must replace the placeholder `ENTER_YOUR_WOK_ID` with the 
 
 You must also add the following JavaScript code to your website. You can paste the JavScript code at the bottom of your page (just over the closing `</body>` tag) to make your page load faster. (The page will not really load faster, but the visible content will be shown earlier to the user which makes is appear as if the page loads faster).
 
-```html
+```javascript
     <script>
       (function(window, document) {
         var loader = function() {
@@ -60,7 +60,8 @@ You must also add the following JavaScript code to your website. You can paste t
           script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
           tag.parentNode.insertBefore(script, tag);
         };
-        window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+        window.addEventListener ? window.addEventListener("load", loader, false) :
+          window.attachEvent("onload", loader);
       })(window, document);
     </script>
 ```
