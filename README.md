@@ -36,11 +36,11 @@ Here is [a simple example](https://github.com/cloudwok/file-upload-embed/blob/ma
 The file-upload embed widget has two parts. First the HTML part:
 
 ```html
-    <form class="cloudwok-upload" data-wokid="ENTER_YOUR_WOK_ID">
-      <div class="cloudwok-upload-files"></div>
-      <div class="cloudwok-dropzone"></div>
-      <div class="cloudwok-download-files"></div>
-    </form>
+<form class="cloudwok-upload" data-wokid="ENTER_YOUR_WOK_ID">
+  <div class="cloudwok-upload-files"></div>
+  <div class="cloudwok-dropzone"></div>
+  <div class="cloudwok-download-files"></div>
+</form>
 ```
 
 In the HTML code, you must replace the placeholder `ENTER_YOUR_WOK_ID` with the wok id of your own wok. You can decide which features you would like to add to your website:
@@ -52,18 +52,18 @@ In the HTML code, you must replace the placeholder `ENTER_YOUR_WOK_ID` with the 
 You must also add the following JavaScript code to your website. You can paste the JavScript code at the bottom of your page (just over the closing `</body>` tag) to make your page load faster. (The page will not really load faster, but the visible content will be shown earlier to the user which makes is appear as if the page loads faster).
 
 ```javascript
-    <script>
-      (function(window, document) {
-        var loader = function() {
-          var script = document.createElement("script"),
-            tag = document.getElementsByTagName("script")[0];
-          script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
-          tag.parentNode.insertBefore(script, tag);
-        };
-        window.addEventListener ? window.addEventListener("load", loader, false) :
-          window.attachEvent("onload", loader);
-      })(window, document);
-    </script>
+<script>
+  (function(window, document) {
+    var loader = function() {
+      var script = document.createElement("script"),
+        tag = document.getElementsByTagName("script")[0];
+      script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
+      tag.parentNode.insertBefore(script, tag);
+    };
+    window.addEventListener ? window.addEventListener("load", loader, false) :
+      window.attachEvent("onload", loader);
+  })(window, document);
+</script>
 ```
 
 ### 2. blueimp/jQuery-File-Upload
