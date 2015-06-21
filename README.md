@@ -17,7 +17,7 @@ Add the CloudWok file-upload embed widget to your website to let visitors of you
 | ![file upload to Microsoft OneDrive folder](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-microsoft-onedrive.png "File upload widget for Microsoft OneDrive") | ... coming soon ... |
 | ![file upload to Facebook photo album](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-facebook-album.png "Photo upload widget for Facebook photo album") | Let your website visitors upload pictures, videos, and photos that are directly transferred to one of your Facebook albums. You can configure who can see the uploaded pictures by adjusting the privacy settings of your Facebook photo album (see "How Privacy Works for Photo Albums" https://www.facebook.com/help/385017548218624/). |
 
-## Getting up-and-running in 5 minutes
+## Get up-and-running in 3 minutes
 
 1. Go to [https://www.cloudwok.com/](https://www.cloudwok.com/) and create an account.
 2. Create a CloudWok that is either connected to a folder in your Dropbox, Google Drive, Box.com account or other cloud storage accounts that are supported by CloudWok.
