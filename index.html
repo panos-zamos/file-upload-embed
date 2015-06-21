@@ -33,7 +33,7 @@
 
     <div style="margin-left: auto; margin-right: auto; width:50%">
       <h2 class="text-center text-uppercase">File-upload widget</h2>
-      <form class="cloudwok-upload" data-wokid="">
+      <form class="cloudwok-upload">
         <div class="cloudwok-upload-files"></div>
         <div class="cloudwok-dropzone"></div>
       </form>
@@ -78,7 +78,7 @@
 
       function updateWokId(wokId) {
           $("form.cloudwok-upload").data('wokid', wokId);
-          console.log($("form.cloudwok-upload").data('wokid'));
+          console.log($("form.cloudwok-upload"));
           $(".cloudwok-wok-id").html(wokId);
       };
 
