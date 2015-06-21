@@ -18,9 +18,9 @@
       <div class="form-group">
         <label class="col-sm-3">Enter your wok id: </label>
         <div class="col-sm-9 input-group">
-          <input class="form-control" id="my-wok-id" type="text" value="" placeholder="4-digit-wok-id" />
+          <input class="form-control" name="wokid" type="text" value="" placeholder="4-digit wok id" />
           <span class="input-group-btn">
-            <button type="button" class="btn btn-primary" id="my-wok-btn">Update</button>
+            <button type="submit" class="btn btn-primary" id="my-wok-btn">Update</button>
           </span>
         </div>
       </div>
@@ -42,7 +42,7 @@
       </form>
       <!-- CloudWok JavaScript snippet -->
       <script>
-        (function(window, document) {
+        window.updateWokId = function(window, document) {
           var loader = function() {
             var script = document.createElement("script"),
               tag = document.getElementsByTagName("script")[0];
@@ -51,7 +51,7 @@
           };
           window.addEventListener ? window.addEventListener("load", loader, false) :
             window.attachEvent("onload", loader);
-        })(window, document);
+        };
       </script>
       <!-- CloudWok embed widget END -->
     </div>
@@ -82,15 +82,30 @@
     <!-- just for demo purposes -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
+      function getUrlVars() {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for(var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+      };
+      /*
       var updateWokId = function(e) {
           e.preventDefault();
           var my_wok_id = $("#my-wok-id").val();
           $("form.cloudwok-upload").data("wokid", my_wok_id);
           $(".cloudwok-wok-id").html(my_wok_id);
       };
+      */
       
       $(document).ready(function() {
-        $("#my-wok-btn").on("click", updateWokId).closest("form").on("submit", updateWokId);
+        var wokId = getUrlVars()['wokid'];
+        $("form.cloudwok-upload").data("wokid", wokId.length ? wokId : 'Ark6');
+        window.updateWokId(window, document);
+        //$("#my-wok-btn").on("click", updateWokId).closest("form").on("submit", updateWokId);
       });
     </script>
     <!-- demo end -->
