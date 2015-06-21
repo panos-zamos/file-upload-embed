@@ -42,7 +42,7 @@
       </form>
       <!-- CloudWok JavaScript snippet -->
       <script>
-        window.updateWokId = function(window, document) {
+        window.initWidget = function(window, document) {
           var loader = function() {
             var script = document.createElement("script"),
               tag = document.getElementsByTagName("script")[0];
@@ -92,19 +92,18 @@
         }
         return vars;
       };
-      /*
-      var updateWokId = function(e) {
-          e.preventDefault();
-          var my_wok_id = $("#my-wok-id").val();
-          $("form.cloudwok-upload").data("wokid", my_wok_id);
-          $(".cloudwok-wok-id").html(my_wok_id);
+
+      function updateWokId(wokId) {
+          $("form.cloudwok-upload").data("wokid", wokId);
+          $(".cloudwok-wok-id").html(wokId);
       };
-      */
+
       
       $(document).ready(function() {
         var wokId = getUrlVars()['wokid'];
-        $("form.cloudwok-upload").data("wokid", wokId && wokId.length ? wokId : 'Ark6');
-        window.updateWokId(window, document);
+        updateWokId(wokId && wokId.length ? wokId : 'Ark6');
+
+        window.initWidget(window, document);
         //$("#my-wok-btn").on("click", updateWokId).closest("form").on("submit", updateWokId);
       });
     </script>
