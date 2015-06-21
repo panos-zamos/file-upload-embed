@@ -34,35 +34,41 @@
 
     <div style="margin-left: auto; margin-right: auto; width:50%">
       <h2 class="text-center text-uppercase">File-upload widget</h2>
-      <form class="cloudwok-upload">
+      <div class="cloudwok-embed">
         <div class="cloudwok-upload-files"></div>
-        <div class="cloudwok-dropzone"></div>
-        <div class="cloudwok-download-files"></div><br />
-      </form>
+        <form class="cloudwok-upload">
+          <div class="cloudwok-dropzone"></div>
+        </form>
+        <div class="cloudwok-download-files"></div>
+        <div class="cloudwok-message"></div>
+      </div>
     </div>
 
     <h2 class="text-center text-uppercase">File-upload Embed Code</h2>
     <p>To copy the following code, <kbd>select</kbd> it and press <kbd><kbd>cmd/ctrl</kbd> + <kbd>c</kbd></kbd></p>
     <pre>
       <br />
-      &lt;form class="cloudwok-upload" data-wokid="<span class="cloudwok-wok-id"></span>"&gt;<br />
-        &lt;div class="cloudwok-upload-files"&gt;&lt;/div&gt;<br />
-        &lt;div class="cloudwok-dropzone"&gt;&lt;/div&gt;<br />
-        &lt;div class="cloudwok-download-files"&gt;&lt;/div&gt;<br />
-      &lt;/form&gt;<br />
-      <br />
-      &lt;script&gt;<br />
-        (function(window, document) {<br />
-          var loader = function() {<br />
-            var script = document.createElement("script"),<br />
-            tag = document.getElementsByTagName("script")[0];<br />
-            script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";<br />
-            tag.parentNode.insertBefore(script, tag);<br />
-          };<br />
-          window.addEventListener ? window.addEventListener("load", loader, false) :<br />
-          window.attachEvent("onload", loader);<br />
-        })(window, document);<br />
-      &lt;/script&gt;
+&lt;div class="cloudwok-embed" data-wokid="<span class="cloudwok-wok-id"></span>"&gt;<br />
+  &lt;div class="cloudwok-upload-files"&gt;&lt;/div&gt;<br />
+  &lt;form class="cloudwok-upload" data-wokid="<span class="cloudwok-wok-id"></span>"&gt;<br />
+    &lt;div class="cloudwok-dropzone"&gt;&lt;/div&gt;<br />
+  &lt;/form&gt;<br />
+  &lt;div class="cloudwok-download-files"&gt;&lt;/div&gt;<br />
+  &lt;div class="cloudwok-message"&gt;&lt;/div&gt;<br />
+&lt;/div&gt;<br />
+<br />
+&lt;script&gt;<br />
+  (function(window, document) {<br />
+    var loader = function() {<br />
+      var script = document.createElement("script"),<br />
+      tag = document.getElementsByTagName("script")[0];<br />
+      script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";<br />
+      tag.parentNode.insertBefore(script, tag);<br />
+    };<br />
+    window.addEventListener ? window.addEventListener("load", loader, false) :<br />
+    window.attachEvent("onload", loader);<br />
+  })(window, document);<br />
+&lt;/script&gt;
     </pre>
     <div class="spacer-50"></div>
 
