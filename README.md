@@ -4,6 +4,12 @@ CloudWok is a Web service that enables you to receive uploaded files directly in
 
 Learn how to embed a cloudwok widget into your own website. Thereby, you can create a form on your website where visitors of your website can upload files that are transferred directly into your connected Dropbox folder (or Google Drive folder, ...). It's easy. Trust me.
 
+## Demo
+
+![CloudWok Embed Code Demo](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-demo.png "CloudWok Embed Code Demo")
+
+[Demo of simple file-upload widget](https://cloudwok.github.io/file-upload-embed/)
+
 ## File upload to your cloud
 
 Add the CloudWok file-upload embed widget to your website to let visitors of your website upload files and receive the files in your favorite cloud storage: Dropbox, Google Drive, Amazon S3, Box.com, or Facebook.
