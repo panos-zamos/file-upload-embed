@@ -117,7 +117,7 @@ $(function() {
 
 ```
 
-## Enforce file size and quota check
+#### 3.1 Enforce file size and quota check
 
 When you sign up for CloudWok, you get a free upload quota of 50MB per month and maximum file size of 5MB. If you have a paid plan, the allowed file size and quota limits are much higher. If you do not enforce a file size check and your CloudWok plan has no quota left (or files are too large), the file upload will not succeed. In such cases, you might want to inform your user, that the uploaded file was too large.
 
