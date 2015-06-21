@@ -28,7 +28,7 @@ Add the CloudWok file-upload embed widget to your website to let visitors of you
 
 1. Go to [https://www.cloudwok.com/](https://www.cloudwok.com/) and create an account.
 2. Create a CloudWok that is either connected to a folder in your Dropbox, Google Drive, Box.com account or other cloud storage accounts that are supported by CloudWok.
-3. After you have created a Wok, you get a URL to an upload website, such as this: https://www.cloudwok.com/u/ArK6. The last four digits are your "wok id" (in this example: ArK6).
+3. After you have created a Wok, you get a URL to an upload website, such as this: https://www.cloudwok.com/u/ArK6. The last four letters are your "wok id" (in this example: ArK6).
 
 ## Examples
 
