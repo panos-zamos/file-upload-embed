@@ -6,7 +6,7 @@ Learn how to embed a cloudwok widget into your own website. Thereby, you can cre
 
 ## Demo
 
-![CloudWok Embed Code Demo](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-code-demo.png "CloudWok Embed Code Demo")
+![CloudWok Embed Code Demo](https://raw.githubusercontent.com/cloudwok/file-upload-embed/master/use-cases/images/cloudwok-embed-widget-demo-website-screenshot.png "CloudWok Embed Code Demo")
 
 [Demo of simple file-upload widget](https://cloudwok.github.io/file-upload-embed/)
 
