@@ -33,27 +33,10 @@
 
     <div style="margin-left: auto; margin-right: auto; width:50%">
       <h2 class="text-center text-uppercase">File-upload widget</h2>
-      <!-- CloudWok embed widget BEGIN -->
-      <!-- Include these HTML and JavaSCript snippets to your website -->
-      <!-- CloudWok upload form -->
       <form class="cloudwok-upload" data-wokid="">
         <div class="cloudwok-upload-files"></div>
         <div class="cloudwok-dropzone"></div>
       </form>
-      <!-- CloudWok JavaScript snippet -->
-      <script>
-        window.initWidget = function(window, document) {
-          var loader = function() {
-            var script = document.createElement("script"),
-              tag = document.getElementsByTagName("script")[0];
-            script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
-            tag.parentNode.insertBefore(script, tag);
-          };
-          window.addEventListener ? window.addEventListener("load", loader, false) :
-            window.attachEvent("onload", loader);
-        };
-      </script>
-      <!-- CloudWok embed widget END -->
     </div>
     
     <h2 class="text-center text-uppercase">File-upload Embed Code</h2>
@@ -104,7 +87,10 @@
         var wokId = getUrlVars()['wokid'];
         updateWokId(wokId && wokId.length ? wokId : 'Ark6');
 
-        window.initWidget(window, document);
+        var script = document.createElement("script"),
+              tag = document.getElementsByTagName("script")[0];
+            script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
+            tag.parentNode.insertBefore(script, tag);
         //$("#my-wok-btn").on("click", updateWokId).closest("form").on("submit", updateWokId);
       });
     </script>
