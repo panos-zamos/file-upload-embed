@@ -25,7 +25,7 @@
     <!-- demo end -->
 
     <div style="margin-left: auto; margin-right: auto; width:50%">
-      <center><h2>File-upload widget</h2></center>
+      <h2 class="text-center text-uppercase">File-upload widget</h2>
       <!-- CloudWok embed widget BEGIN -->
       <!-- Include these HTML and JavaSCript snippets to your website -->
       <!-- CloudWok upload form -->
@@ -49,6 +49,7 @@
       <!-- CloudWok embed widget END -->
     </div>
     
+    <h2 class="text-center text-uppercase">File-upload Embed Code</h2>
     <pre>
       &lt;form class="cloudwok-upload" data-wokid="<span class="cloudwok-wok-id"></span>"&gt;<br /> 
       &lt;div class="cloudwok-upload-files"&gt;&lt;/div&gt;<br /> 
@@ -58,10 +59,11 @@
       &lt;script&gt;<br /> 
         (function(window, document) {<br />
           var loader = function() {<br />
-          var script = document.createElement("script"),<br />
-          tag = document.getElementsByTagName("script")[0];<br />
-          script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";<br />
-          tag.parentNode.insertBefore(script, tag);<br /> };<br />
+            var script = document.createElement("script"),<br />
+            tag = document.getElementsByTagName("script")[0];<br />
+            script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";<br />
+            tag.parentNode.insertBefore(script, tag);<br />
+          };<br />
           window.addEventListener ? window.addEventListener("load", loader, false) :<br />
           window.attachEvent("onload", loader);<br />
         })(window, document);<br />
