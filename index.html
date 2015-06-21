@@ -17,8 +17,12 @@
     <form class="form-inline">
       <div class="form-group">
         <label>Enter your wok id: </label>
-        <input id="my-wok-id" type="text" value="" placeholder="4-digit-wok-id" />
-        <button type="button" class="btn btn-success" id="my-wok-btn">Update</button>
+        <div class="input-group">
+          <input id="my-wok-id" type="text" value="" placeholder="4-digit-wok-id" />
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-primary" id="my-wok-btn">Update</button>
+          </span>
+        </div>
       </div>
     </form>
     <div class="lead" id="my-wok-id-msg">Active wok id: <strong class="cloudwok-wok-id"></strong></div>
@@ -50,6 +54,7 @@
     </div>
     
     <h2 class="text-center text-uppercase">File-upload Embed Code</h2>
+    <p>To copy the following code, <kbd>select</kbd> it and press <kbd><kbd>ctrl/cmd</kbd> + <kbd>c</kbd></kbd></p>
     <pre>
       &lt;form class="cloudwok-upload" data-wokid="<span class="cloudwok-wok-id"></span>"&gt;<br /> 
       &lt;div class="cloudwok-upload-files"&gt;&lt;/div&gt;<br /> 
@@ -67,7 +72,7 @@
           window.addEventListener ? window.addEventListener("load", loader, false) :<br />
           window.attachEvent("onload", loader);<br />
         })(window, document);<br />
-      &lt;/script&gt;</p>
+      &lt;/script&gt;
     </pre>
 
     <!-- just for demo purposes -->
