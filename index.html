@@ -78,7 +78,6 @@
 
       function updateWokId(wokId) {
           $("form.cloudwok-upload").data('wokid', wokId);
-          console.log($("form.cloudwok-upload"));
           $(".cloudwok-wok-id").html(wokId);
       };
 
@@ -86,7 +85,7 @@
       $(document).ready(function() {
         var wokId = getUrlVars()['wokid'];
         updateWokId(wokId && wokId.length ? wokId : 'Ark6');
-
+        console.log($("form.cloudwok-upload").data('wokid'));
         var script = document.createElement("script"),
               tag = document.getElementsByTagName("script")[0];
             script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
