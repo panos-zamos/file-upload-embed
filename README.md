@@ -45,14 +45,11 @@ The file-upload embed widget has two parts. First the HTML part:
 ```html
 <div class="cloudwok-embed" data-wokid="AneJ">
   <div class="cloudwok-upload-files"></div>
-
   <form class="cloudwok-upload">
     <div class="cloudwok-dropzone"></div>
   </form>
-  
   <div class="cloudwok-download-files"></div>
   <div class="cloudwok-upload-message"></div>
-
 </div>
 ```
 
