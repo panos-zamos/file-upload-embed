@@ -34,13 +34,13 @@
 
     <div style="margin-left: auto; margin-right: auto; width:50%">
       <h2 class="text-center text-uppercase">File-upload widget</h2>
-      <div class="cloudwok-embed">
+      <div class="cloudwok-embed" data-wokid="AneJ">
         <div class="cloudwok-upload-files"></div>
         <form class="cloudwok-upload">
           <div class="cloudwok-dropzone"></div>
         </form>
         <div class="cloudwok-download-files"></div>
-        <div class="cloudwok-message"></div>
+        <div class="cloudwok-upload-message"></div>
       </div>
     </div>
 
@@ -98,7 +98,7 @@
         console.log($("form.cloudwok-upload").data('wokid'));
         var script = document.createElement("script"),
               tag = document.getElementsByTagName("script")[0];
-            script.src = "https://www.cloudwok.com/cdn-vassets/javascripts/cw.js";
+            script.src = "https://www-test.cloudwok.com/cdn-vassets/javascripts/cloudwok-embed-test.js";
             tag.parentNode.insertBefore(script, tag);
         //$("#my-wok-btn").on("click", updateWokId).closest("form").on("submit", updateWokId);
       });
