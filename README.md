@@ -38,7 +38,7 @@ The other two approaches (2 and 3) are a bit more advanced but give you more fle
 
 ### 1. copy & paste
 
-Here is [a simple example](https://github.com/cloudwok/file-upload-embed/blob/master/examples/01-simple-example.html) which shows you how you can add the file-upload widget to your website.
+Here is [a simple example](https://raw.githubusercontent.com/cloudwok/file-upload-embed/gh-pages/index.html) which shows you how you can add the file-upload widget to your website.
 
 The file-upload embed widget has two parts. First the HTML part:
 
