@@ -160,7 +160,7 @@ method="POST" enctype="multipart/form-data">
 </script>
 ```
 
-## Worpress plugin
+## Wordpress plugin
 
 You can add the CloudWok [Wordpress plugin](https://github.com/cloudwok/file-upload-wordpress-plugin) to your Wordpress blog or website.
 
