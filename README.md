@@ -159,3 +159,7 @@ method="POST" enctype="multipart/form-data">
       });
 </script>
 ```
+
+## Worpress plugin
+
+We are currently working on a [Wordpress plugin](https://github.com/cloudwok/file-upload-wordpress-plugin). You can download the [cloudwok.php](https://raw.githubusercontent.com/cloudwok/file-upload-wordpress-plugin/master/cloudwok.php) file and copy it into your Wordpress plugin directory.
