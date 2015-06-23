@@ -162,4 +162,10 @@ method="POST" enctype="multipart/form-data">
 
 ## Worpress plugin
 
-We are currently working on a [Wordpress plugin](https://github.com/cloudwok/file-upload-wordpress-plugin). You can download the [cloudwok.php](https://raw.githubusercontent.com/cloudwok/file-upload-wordpress-plugin/master/cloudwok.php) file and copy it into your Wordpress plugin directory.
+You can add the CloudWok [Wordpress plugin](https://github.com/cloudwok/file-upload-wordpress-plugin) to your Wordpress blog or website.
+
+You can download the [cloudwok.php](https://raw.githubusercontent.com/cloudwok/file-upload-wordpress-plugin/master/cloudwok.php) file and copy it into your Wordpress plugin directory (/wp-content/plugins).
+
+Just activate the plugin and add shortcodes to your page like this:
+
+`[cloudwok wok_id="YOUR_WOK_ID" show_uploads="False" show_downloads="True" show_form="True"]`
