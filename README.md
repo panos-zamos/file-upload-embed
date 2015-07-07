@@ -164,7 +164,7 @@ method="POST" enctype="multipart/form-data">
 
 You can add the CloudWok [Wordpress plugin](https://github.com/cloudwok/file-upload-wordpress-plugin) to your Wordpress blog or website.
 
-1. First, download the [cloudwok.php](https://raw.githubusercontent.com/cloudwok/file-upload-wordpress-plugin/master/cloudwok.php) file and copy it into your Wordpress plugin directory (/wp-content/plugins).
+1. Search for the CloudWok plugin in the WordPress plugin repository: (https://wordpress.org/plugins/cloudwok-file-upload/)[https://wordpress.org/plugins/cloudwok-file-upload/]
 2. Activate the plugin.
 3. Add shortcodes to your page like this:
 
