@@ -62,8 +62,8 @@ In the HTML code, you must replace the placeholder `ENTER_YOUR_WOK_ID` with the 
 
 If you add the `<div class="cloudwok-upload-message"></div>`, a simple message field is shown. You can add e-mail and first-name / last-name fields by adding the following attributes:
 
-```
-<div class="cloudwok-embed"  data-show-name="y" data-show-email="y" data-wokid="YOUR_WOK_ID">
+```html
+<div class="cloudwok-embed" data-show-name="y" data-show-email="y" data-wokid="YOUR_WOK_ID">
 ... 
 </div>
 ```
