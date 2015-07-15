@@ -60,6 +60,14 @@ In the HTML code, you must replace the placeholder `ENTER_YOUR_WOK_ID` with the 
 * `<div class="cloudwok-download-files"></div>`
 * `<div class="cloudwok-upload-message"></div>`
 
+If you add the `<div class="cloudwok-upload-message"></div>`, a simple message field is shown. You can add e-mail and first-name / last-name fields by adding the following attributes:
+
+```
+<div class="cloudwok-embed"  data-show-name="y" data-show-email="y" data-wokid="YOUR_WOK_ID">
+... 
+</div>
+```
+
 You must also add the following JavaScript code to your website. You can paste the JavScript code at the bottom of your page (just over the closing `</body>` tag) to make your page load faster. (The page will not really load faster, but the visible content will be shown earlier to the user which makes is appear as if the page loads faster).
 
 ```javascript
