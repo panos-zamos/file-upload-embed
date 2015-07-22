@@ -64,7 +64,7 @@ You must also add the following JavaScript code to your website. You can paste t
 
 You can decide which features you would like to add to your website:
 
-| JavaScript                        |  Feature          |
+| Widget HTML element               |  Feature          |
 |-----------------------------------|-------------------|
 | `<div class="cloudwok-upload-files"> </div>` | Show files that an uploader uploaded to the uploader |
 | `<div class="cloudwok-dropzone"> </div>` | Show the dropzone where files can be dragged & dropped or added to initiate a file upload |
