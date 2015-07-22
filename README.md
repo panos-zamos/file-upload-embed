@@ -66,12 +66,8 @@ You can decide which features you would like to add to your website:
 
 | JavaScript                |  Feature                  |
 |---------------------------|---------------------------|
-| ```javascript
-<div class="cloudwok-upload-files"></div>
-``` | Show files that an uploader uploaded to the uploader |
-| ```javascript
-<div class="cloudwok-dropzone"></div>
-``` | Show the dropzone where files can be dragged & dropped or added to initiate a file upload |
+| `<div class="cloudwok-upload-files"></div>` | Show files that an uploader uploaded to the uploader |
+| ```javascript<div class="cloudwok-dropzone"></div>``` | Show the dropzone where files can be dragged & dropped or added to initiate a file upload |
 | ```javascript
 <div class="cloudwok-download-files"></div>
 ```  | Show all files that have been uploaded by all uploaders |
