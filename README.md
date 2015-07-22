@@ -93,9 +93,9 @@ More info coming soon...
 
 ### WordPress plugin
 
-You can add the CloudWok [Wordpress plugin](https://github.com/cloudwok/file-upload-wordpress-plugin) to your WordPress blog or website.
+You can add the CloudWok WordPress plugin [https://wordpress.org/plugins/cloudwok-file-upload/](https://wordpress.org/plugins/cloudwok-file-upload/) to your WordPress blog or website.
 
-1. Search for the CloudWok plugin in the WordPress Plugin Directory (left-hand sidebar in your WordPress admin dashboard): [https://wordpress.org/plugins/cloudwok-file-upload/](https://wordpress.org/plugins/cloudwok-file-upload/)
+1. Search for the CloudWok plugin in the WordPress Plugin Directory (left-hand sidebar in your WordPress admin dashboard).
 2. Activate the plugin.
 3. Add shortcodes to your page like this:
 
