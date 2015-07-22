@@ -66,10 +66,10 @@ You can decide which features you would like to add to your website:
 
 | JavaScript                        |  Feature          |
 |-----------------------------------|-------------------|
-| `<div class="cloudwok-upload-files"></div>` | Show files that an uploader uploaded to the uploader |
-| `<div class="cloudwok-dropzone"></div>``` | Show the dropzone where files can be dragged & dropped or added to initiate a file upload |
-| `<div class="cloudwok-download-files"></div>`  | Show all files that have been uploaded by all uploaders |
-| `<div class="cloudwok-upload-message"></div>`  | Show a message form that enables the uploader to send a message to the receiver of the file, i.e., to the cloudwok owner |
+| `<div class="cloudwok-upload-files"> </div>` | Show files that an uploader uploaded to the uploader |
+| `<div class="cloudwok-dropzone"> </div>` | Show the dropzone where files can be dragged & dropped or added to initiate a file upload |
+| `<div class="cloudwok-download-files"> </div>`  | Show all files that have been uploaded by all uploaders |
+| `<div class="cloudwok-upload-message"> </div>`  | Show a message form that enables the uploader to send a message to the receiver of the file, i.e., to the cloudwok owner |
 
 If you add the `<div class="cloudwok-upload-message"></div>`, a simple message form field is shown that allows your uploaders to send a message along with the uploaded file(s). You can add e-mail and first-name / last-name fields to the message form by adding the following attributes:
 
