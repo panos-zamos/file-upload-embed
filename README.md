@@ -26,7 +26,7 @@ The following example shows you how to integrate CloudWok into your website. The
 
 Other approaches are explained in the [wiki](https://github.com/cloudwok/file-upload-embed/wiki) and are a bit more advanced but give you more flexibility to customize the widget and integrate the CloudWok API deeper into your existing workflows.
 
-### copy & paste
+### Copy & paste widget code into your website
 
 Here is [a simple example](https://github.com/cloudwok/file-upload-embed/blob/gh-pages/index.html) which shows you how you can add the file-upload widget to your website.
 
@@ -64,10 +64,20 @@ You must also add the following JavaScript code to your website. You can paste t
 
 You can decide which features you would like to add to your website:
 
-* `<div class="cloudwok-upload-files"></div>` - show files that an uploader uploaded to the uploader
-* `<div class="cloudwok-dropzone"></div>` - show the dropzone where files can be dragged & dropped or added to initiate a file upload
-* `<div class="cloudwok-download-files"></div>` - show all files that have been uploaded by all uploaders
-* `<div class="cloudwok-upload-message"></div>` - show a message form that enables the uploader to send a message to the receiver of the file, i.e., to the cloudwok owner
+| JavaScript                |  Feature                  |
+|---------------------------|---------------------------|
+| ```javascript
+<div class="cloudwok-upload-files"></div>
+``` | Show files that an uploader uploaded to the uploader |
+| ```javascript
+<div class="cloudwok-dropzone"></div>
+``` | Show the dropzone where files can be dragged & dropped or added to initiate a file upload |
+| ```javascript
+<div class="cloudwok-download-files"></div>
+```  | Show all files that have been uploaded by all uploaders |
+| ```javascript
+<div class="cloudwok-upload-message"></div>
+```  | Show a message form that enables the uploader to send a message to the receiver of the file, i.e., to the cloudwok owner |
 
 If you add the `<div class="cloudwok-upload-message"></div>`, a simple message form field is shown that allows your uploaders to send a message along with the uploaded file(s). You can add e-mail and first-name / last-name fields to the message form by adding the following attributes:
 
