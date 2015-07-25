@@ -90,7 +90,7 @@ You would like to send the download-links (links to the files which are uploaded
 <input name="abc" value="links go here"></input>
 ```
 
-More info coming soon...
+For example, you can populate a div with id myDiv via `data-uploaded-files-target-selector="#myDiv"` or hidden input field with name myLinks via `data-uploaded-files-target-selector="input:hidden[name=myLinks]"`.
 
 ### WordPress plugin
 
