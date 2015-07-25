@@ -83,10 +83,11 @@ If you add the `<div class="cloudwok-upload-message"></div>`, a simple message f
 You would like to send the download-links (links to the files which are uploaded) with a different form or method directly to your own system, not with our upload form? You can do that! You can further customize the widget by specifying a jQuery selector that pastes the download-links as blank-separated list into an HTML element of your choice via `data-uploaded-files-target-selector`:
 
 ```html
-<div class="cloudwok-embed" data-uploaded-files-target-selector="..."
+<div class="cloudwok-embed" data-uploaded-files-target-selector="input[name=abc]"
  data-wokid="YOUR_WOK_ID">
 ...
 </div>
+<input name="abc" value="links go here"></input>
 ```
 
 More info coming soon...
