@@ -73,7 +73,7 @@ You can decide which features you would like to add to your website:
 
 If you add the `<div class="cloudwok-upload-message"></div>`, a simple message form field is shown that allows your uploaders to send a message along with the uploaded file(s).
 
-*Add Name and E-Mail input fields.* You can add e-mail and first-name / last-name fields to the message form by adding the following attributes:
+**Add Name and E-Mail input fields.** You can add e-mail and first-name / last-name fields to the message form by adding the following attributes:
 
 ```html
 <div class="cloudwok-embed" data-show-name="y" data-show-email="y"
