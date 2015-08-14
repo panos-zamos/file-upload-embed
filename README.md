@@ -71,7 +71,9 @@ You can decide which features you would like to add to your website:
 | `<div class="cloudwok-download-files"> </div>`  | Show all files that have been uploaded by all uploaders |
 | `<div class="cloudwok-upload-message"> </div>`  | Show a message form that enables the uploader to send a message to the receiver of the file, i.e., to the cloudwok owner |
 
-If you add the `<div class="cloudwok-upload-message"></div>`, a simple message form field is shown that allows your uploaders to send a message along with the uploaded file(s). You can add e-mail and first-name / last-name fields to the message form by adding the following attributes:
+If you add the `<div class="cloudwok-upload-message"></div>`, a simple message form field is shown that allows your uploaders to send a message along with the uploaded file(s).
+
+*Add Name and E-Mail input fields.* You can add e-mail and first-name / last-name fields to the message form by adding the following attributes:
 
 ```html
 <div class="cloudwok-embed" data-show-name="y" data-show-email="y"
