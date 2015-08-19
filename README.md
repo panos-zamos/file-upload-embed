@@ -68,7 +68,9 @@ You can decide which features you would like to add to your website:
 | `<div class="cloudwok-download-files"> </div>`  | Show all files that have been uploaded by all uploaders |
 | `<div class="cloudwok-upload-message"> </div>`  | Show a message form that enables the uploader to send a message to the receiver of the file, i.e., to the cloudwok owner |
 
-If you add the `<div class="cloudwok-upload-message"></div>`, a simple message form field is shown that allows your uploaders to send a message along with the uploaded file(s). You can add e-mail and first-name / last-name fields to the message form by adding the following attributes:
+If you add the `<div class="cloudwok-upload-message"></div>`, a simple message form field is shown that allows your uploaders to send a message along with the uploaded file(s).
+
+**Add Name and E-Mail input fields.** You can add e-mail and first-name / last-name fields to the message form by adding the following attributes:
 
 ```html
 <div class="cloudwok-embed" data-show-name="y" data-show-email="y"
@@ -80,13 +82,14 @@ If you add the `<div class="cloudwok-upload-message"></div>`, a simple message f
 You would like to send the download-links (links to the files which are uploaded) with a different form or method directly to your own system, not with our upload form? You can do that! You can further customize the widget by specifying a jQuery selector that pastes the download-links as blank-separated list into an HTML element of your choice via `data-uploaded-files-target-selector`:
 
 ```html
-<div class="cloudwok-embed" data-uploaded-files-target-selector="..."
+<div class="cloudwok-embed" data-uploaded-files-target-selector="input[name=abc]"
  data-wokid="YOUR_WOK_ID">
 ...
 </div>
+<input name="abc" value="links go here"></input>
 ```
 
-More info coming soon...
+For example, you can populate a div with id myDiv via `data-uploaded-files-target-selector="#myDiv"` or hidden input field with name myLinks via `data-uploaded-files-target-selector="input:hidden[name=myLinks]"`.
 
 ### WordPress plugin
 
