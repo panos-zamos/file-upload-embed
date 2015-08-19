@@ -30,7 +30,7 @@ Other approaches are explained in the [wiki](https://github.com/cloudwok/file-up
 
 Here is [a simple example](https://github.com/cloudwok/file-upload-embed/blob/gh-pages/index.html) which shows you how you can add the file-upload widget to your website.
 
-The file-upload embed widget has two parts. First the HTML part:
+The file-upload embed widget has following two parts: HTML and JavaScript code.
 
 ```html
 <div class="cloudwok-embed" data-wokid="ENTER_YOUR_WOK_ID">
@@ -41,13 +41,6 @@ The file-upload embed widget has two parts. First the HTML part:
   <div class="cloudwok-download-files"></div>
   <div class="cloudwok-upload-message"></div>
 </div>
-```
-
-In the HTML code, you must replace the placeholder `ENTER_YOUR_WOK_ID` with the wok id of your own wok.
-
-You must also add the following JavaScript code to your website. You can paste the JavScript code at the bottom of your page (just over the closing `</body>` tag) to make your page load faster. (The page will not really load faster, but the visible content will be shown earlier to the user which makes is appear as if the page loads faster).
-
-```javascript
 <script>
   (function(window, document) {
     var loader = function() {
@@ -61,6 +54,10 @@ You must also add the following JavaScript code to your website. You can paste t
   })(window, document);
 </script>
 ```
+
+In the HTML code, you must replace the placeholder `ENTER_YOUR_WOK_ID` with the wok id of your own wok.
+
+You can paste the JavScript code at the bottom of your page (just over the closing `</body>` tag) to make your page load faster. (The page will not really load faster, but the visible content will be shown earlier to the user which makes is appear as if the page loads faster).
 
 You can decide which features you would like to add to your website:
 
