@@ -6,7 +6,7 @@ Learn how to embed a cloudwok widget into your own website. Thereby, you can cre
 
 Take a look at the [wiki](https://github.com/cloudwok/file-upload-embed/wiki) for further information.
 
-If you have any questions or issues, you can also reach out to us on [StackOverflow](http://stackoverflow.com/questions/tagged/cloudwok) - just tag your question with "cloudwok".
+Check out the [cheatsheets](http://blog.cloudwok.com/cloudwok-widget-cheat-sheet/)!
 
 ## Demo
 
