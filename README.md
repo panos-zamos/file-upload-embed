@@ -18,7 +18,7 @@ If you have any questions or issues, you can also reach out to us on [StackOverf
 
 1. Go to [https://www.cloudwok.com/](https://www.cloudwok.com/) and create an account.
 2. Create a CloudWok that is either connected to a folder in your Dropbox, Google Drive, Box.com account or other cloud storage accounts that are supported by CloudWok.
-3. After you have created a Wok, you get a URL to an upload website, such as this: https://www.cloudwok.com/u/AneJ. The last four letters are your "wok id" (in this example: AneJ).
+3. After you have created a Wok, you get a URL to an upload website, such as this: https://www.cloudwok.com/u/AneJ. The last four letters are your "wok id" (in this example: AneJ). If you use an alias name, you also find the wok id in the "Overview" menu tab of your wok.
 
 ## Examples
 
@@ -33,7 +33,7 @@ Here is [a simple example](https://github.com/cloudwok/file-upload-embed/blob/gh
 The file-upload embed widget has following two parts: HTML and JavaScript code.
 
 ```html
-<div class="cloudwok-embed" data-wokid="ENTER_YOUR_WOK_ID">
+<div class="cloudwok-embed" data-wokid="YOUR_WOK_ID">
   <div class="cloudwok-upload-files"></div>
   <form class="cloudwok-upload">
     <div class="cloudwok-dropzone"></div>
@@ -55,7 +55,7 @@ The file-upload embed widget has following two parts: HTML and JavaScript code.
 </script>
 ```
 
-In the HTML code, you must replace the placeholder `ENTER_YOUR_WOK_ID` with the wok id of your own wok.
+In the HTML code, you must replace the placeholder `YOUR_WOK_ID` with the wok id of your own wok.
 
 You can paste the JavScript code at the bottom of your page (just over the closing `</body>` tag) to make your page load faster. (The page will not really load faster, but the visible content will be shown earlier to the user which makes is appear as if the page loads faster).
 
@@ -90,6 +90,16 @@ You would like to send the download-links (links to the files which are uploaded
 ```
 
 For example, you can populate a div with id myDiv via `data-uploaded-files-target-selector="#myDiv"` or hidden input field with name myLinks via `data-uploaded-files-target-selector="input:hidden[name=myLinks]"`.
+
+**Only a simple file-upload button (no Drag-n-Dropzone).** You can replace the dropzone with a simple file-upload button (which you can style as explained <a href="https://github.com/cloudwok/file-upload-embed/wiki/Customize-CSS" target="_blank">here</a>) as shown below:
+
+```html
+<div class="cloudwok-embed" data-wokid="YOUR_WOK_ID">
+  <form class="cloudwok-upload">
+    <input type="file" />
+  </form>
+</div>
+```
 
 ### WordPress plugin
 
